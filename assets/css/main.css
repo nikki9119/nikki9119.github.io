@@ -78,6 +78,12 @@ a{
     display: none;
 }
 
+#moon{
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+}
+
 .header_logo>svg:hover,.header_logo>a:hover{
     fill: #dcdcdc;
 }
@@ -188,5 +194,9 @@ div.profile_intro{
     }
     .tooltip .tooltiptext{
         font-size: 0.7em;
+    }
+    #moon{
+        width: 35px;
+        height: 35px;
     }
 }

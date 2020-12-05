@@ -43,6 +43,7 @@ function changeThemeToDark(){
     bannerBg.style.background = "#222831";
     sun.style.display = "inline-block";
     moon.style.display = "none";
+    document.getElementById("themetooltip").innerHTML = "Light Theme";
 }
 
 function changeThemeToLight(){
@@ -53,6 +54,7 @@ function changeThemeToLight(){
     bannerBg.style.background = "#ffffff";
     moon.style.display = "inline-block";
     sun.style.display = "none";
+    document.getElementById("themetooltip").innerHTML = "Dark Theme";
 }
 
 const fadeInHeader = () => {
