@@ -9,9 +9,9 @@ var theme = localStorage.getItem("theme");
 var sheet = document.styleSheets[0];
 var rules = sheet.cssRules || sheet.rules;
 
-var textColor = rules[1];
-var bgColor = rules[2];
-var bannerBg = rules[6]
+var textColor = rules[2];
+var bgColor = rules[3];
+var bannerBg = rules[7];
 
 window.onload = function() {
     if(theme === "light"){
@@ -20,12 +20,17 @@ window.onload = function() {
         changeThemeToDark();
     }
     // console.log("Window loaded")
-    fadeInHeader();
+    fadeInPage();
+    fadeInBanner();
     fadeInPicture();
     fadeInName();
     fadeInNavBar();
     fadeInIntro();
 };
+
+function fadeInPage(){
+    document.getElementById('page-wrapper').style.opacity = '1';
+}
 
 function changeTheme(){
     if(theme === "light"){
@@ -57,12 +62,12 @@ function changeThemeToLight(){
     document.getElementById("themetooltip").innerHTML = "Dark Theme";
 }
 
-const fadeInHeader = () => {
+const fadeInBanner = () => {
     anime({
         targets: '.banner',
         opacity: ['0','1'],
         easing: 'easeInOutQuad',
-        duration: 1500
+        delay: 100
     });
 };
 
