@@ -1,11 +1,13 @@
-body{
+html,body{
     margin: 0;
-    padding: 0;
+    height: 100%;
     font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
 }
 
 #page-wrapper{
     opacity: 0;
+    height: 100%;
 }
 
 .textcolor{
@@ -16,7 +18,7 @@ body{
     background: #ffffff;
 }
 
-header,footer,section{
+header,footer{
     display: block;
 }
 
@@ -34,14 +36,14 @@ header{
 		z-index: 100;
 }
 
-section.banner{
+div.banner{
     background-image: linear-gradient(#0072ff,#00c6ff);
     height: 13em;
     position: relative;
     width: 100%;
 }
 
-section.banner:before{
+div.banner:before{
     content: '';
     position: absolute;
     bottom: 0px;
@@ -50,11 +52,20 @@ section.banner:before{
     height: 100px;
     clip-path: polygon(100% 0,0 100%,100% 100%);
 }
-a{
+
+section{
+    height: 100vh;
+}
+
+.git-logo{
     fill: inherit;
+}
+
+a{
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
 }
+
 .navbar{
     display: flex;
     justify-content: center;
@@ -142,7 +153,7 @@ div.profile_intro{
     align-items: center;
     justify-content: center;
     text-align: center;
-    top: 10vh;
+    top: 14vh;
     padding: 1em;
 }
 .tooltip{
@@ -167,14 +178,25 @@ div.profile_intro{
     visibility: visible;
     display: inline-block;
 }
+
+.scroll_banner{
+    position: relative;
+    top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
 @media(min-width: 800px){
     header{
         height:3em;
     }
-    section.banner{
+    div.banner{
         height: 20em;
     }
-    section.banner:before{
+    div.banner:before{
         height: 200px;
     }
     .text-large{

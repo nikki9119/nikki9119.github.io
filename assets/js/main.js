@@ -78,7 +78,7 @@ const fadeInPicture = () => {
         translateY:['100px','0px'],
         easing: 'easeOutExpo',
         duration: 1500,
-        delay: 800
+        delay: 1000
     })
 };
 
@@ -89,7 +89,7 @@ const fadeInName = () => {
         translateY:['-100px','0px'],
         easing: 'easeOutExpo',
         duration: 1500,
-        delay: 1000
+        delay: 1200
     })
 };
 
@@ -98,7 +98,7 @@ const fadeInNavBar = () => {
         targets: '.navbar',
         opacity: ['0','1'],
         easing: 'easeInOutQuad',
-        delay: 1200
+        delay: 1400
     });
 };
 
