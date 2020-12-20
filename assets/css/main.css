@@ -2,7 +2,6 @@ html,body{
     margin: 0;
     height: 100%;
     font-family: 'Poppins',sans-serif;
-    scroll-behavior: smooth;
 }
 
 #page-wrapper{
@@ -37,7 +36,8 @@ header{
 }
 
 div.banner{
-    background-image: linear-gradient(#0072ff,#00c6ff);
+    background-image: linear-gradient(#0072FF,#00c6FF);
+    /* background-image: linear-gradient(to right,#0072FF,#40E0D0,#FF8C00,#FF0080); */
     height: 13em;
     position: relative;
     width: 100%;
@@ -82,7 +82,6 @@ a{
     padding: 0 0.25em 0 0.25em;
     cursor: pointer;
     /* margin-top: -6px; */
-    -webkit-tap-highlight-color: transparent;
 }
 
 .palette{
@@ -118,8 +117,11 @@ div.image_canvas{
     border-radius: 50%;
     width: 10em;
     height: 10em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 1;
+}
+
+.elevated{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 img.profile_image{
@@ -183,10 +185,21 @@ div.profile_intro{
     position: relative;
     top: 15vh;
     display: flex;
+    width: 10em;
+    height: 2em;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
     justify-content: center;
     text-align: center;
     text-decoration: none;
+    /* background: linear-gradient(to right,#0072FF,#00C6FF); */
+    background: #00C6FF;
+}
+
+.container{
+    padding: 1em;
 }
 
 @media(min-width: 800px){
@@ -224,5 +237,9 @@ div.profile_intro{
     #moon{
         width: 35px;
         height: 35px;
+    }
+    .scroll_banner{
+        width: 15em;
+        height: 3em;
     }
 }

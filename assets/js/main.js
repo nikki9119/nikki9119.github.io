@@ -26,6 +26,10 @@ window.onload = function() {
     fadeInName();
     fadeInNavBar();
     fadeInIntro();
+    fadeInKnowMore();
+    new fullpage('#fullpage',{
+        autoScrolling: true,
+    });
 };
 
 function fadeInPage(){
@@ -109,4 +113,15 @@ const fadeInIntro = () => {
         easing: 'easeInOutQuad',
         delay: 1400
     });
+}
+
+const fadeInKnowMore = () => {
+    anime({
+        targets: '.scroll_banner',
+        opacity: ['0','1'],
+        translateY:['100px','0px'],
+        easing: 'easeOutExpo',
+        duration: 1500,
+        delay: 2000
+    })
 }

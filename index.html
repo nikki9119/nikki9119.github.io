@@ -5,11 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nikhil Kumar</title>
         <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/webkit.css">
+        <link rel="stylesheet" href="assets/css/fullpage.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     </head>
     <body class="bgcolor">
-        <div id="page-wrapper">
+        <div id="page-wrapper" class="fullpage">
             <header>
                 <div class="navbar">
                     <div class="spacer"></div>
@@ -49,10 +51,10 @@
                     </div>
                 </div>
             </header>
-            <section id="section1">
+            <section id="landingpage" class="section">
                 <div class="banner">
                     <div class="name_card">
-                        <div class="image_canvas bgcolor">
+                        <div class="image_canvas bgcolor elevated">
                             <div style="padding: 3px;">
                                 <img src="assets/images/profile.jpg" alt="Profile picture" class="profile_image">
                             </div>
@@ -62,18 +64,26 @@
                     <div class="profile_intro text-medium textcolor">
                         CS Undergrad at College of Engineering Guindy | Web Developer | Photographer | Motorcycle Enthusiast | AvGeek
                     </div>
-                    <!-- <a href="#section2" class="scroll_banner text-medium textcolor">More about me</a> -->
+                    <div class="scroll_banner elevated">
+                        <a href="#education" class="text-medium textcolor">More about me</a> 
+                    </div>
+                </div>
+                <div>
+                    
                 </div>
             </section>
-            <!-- <section class="intro" id="section2">
-                <div class="text-medium textcolor">
-                    My name is Nikhil
+            <section id="education" class="section">
+                <div class="container">
+                    <div class="text-large textcolor">
+                        Education
+                    </div>
                 </div>
-            </section> -->
+            </section>
             <footer>
                 
             </footer>
         </div>
+        <script src="assets/js/fullpage.min.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
     </body>
