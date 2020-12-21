@@ -12,6 +12,7 @@ var rules = sheet.cssRules || sheet.rules;
 var textColor = rules[2];
 var bgColor = rules[3];
 var bannerBg = rules[7];
+var iconColor = rules[8];
 
 window.onload = function() {
     if(theme === "light"){
@@ -27,9 +28,10 @@ window.onload = function() {
     fadeInNavBar();
     fadeInIntro();
     fadeInKnowMore();
-    new fullpage('#fullpage',{
-        autoScrolling: true,
-    });
+    fadeInProfileTray();
+    // new fullpage('#fullpage',{
+    //     autoScrolling: true,
+    // });
 };
 
 function fadeInPage(){
@@ -50,6 +52,7 @@ function changeThemeToDark(){
     textColor.style.color = "#ffffff"; //#f2a365
     bgColor.style.background = "#222831";
     bannerBg.style.background = "#222831";
+    iconColor.style.fill = "#ffffff";
     sun.style.display = "inline-block";
     moon.style.display = "none";
     document.getElementById("themetooltip").innerHTML = "Light Theme";
@@ -61,6 +64,7 @@ function changeThemeToLight(){
     textColor.style.color = "#222831";
     bgColor.style.background = "#ffffff";
     bannerBg.style.background = "#ffffff";
+    iconColor.style.fill = "#222831";
     moon.style.display = "inline-block";
     sun.style.display = "none";
     document.getElementById("themetooltip").innerHTML = "Dark Theme";
@@ -122,6 +126,16 @@ const fadeInKnowMore = () => {
         translateY:['100px','0px'],
         easing: 'easeOutExpo',
         duration: 1500,
+        delay: 2000
+    })
+}
+
+const fadeInProfileTray = () => {
+    anime({
+        targets: '.profiletray',
+        opacity: ['0','1'],
+        duration: 1500,
+        easing: 'easeInOutQuad',
         delay: 2000
     })
 }

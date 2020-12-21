@@ -53,6 +53,10 @@ div.banner:before{
     clip-path: polygon(100% 0,0 100%,100% 100%);
 }
 
+.iconcolor svg path{
+    fill: #00C6FF !important;
+}
+
 section{
     height: 100vh;
 }
@@ -202,6 +206,17 @@ div.profile_intro{
     padding: 1em;
 }
 
+.profiletray{
+    position: relative;
+    top: 45vh;
+    display: grid;
+    grid-template-columns: repeat(5,30px);
+    gap: 0 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 @media(min-width: 800px){
     header{
         height:3em;
@@ -241,5 +256,8 @@ div.profile_intro{
     .scroll_banner{
         width: 15em;
         height: 3em;
+    }
+    .profiletray{
+        gap: 0 40px;
     }
 }
