@@ -1,0 +1,19 @@
+.facebook>a>svg:hover{
+    fill: #4267B2;
+}
+
+.linkedin>a>svg:hover{
+    fill: #2867B2;
+}
+
+.instagram>a>svg:hover{
+    fill: #e95950;
+}
+
+.twitter>a>svg:hover{
+    fill: #1DA1F2;
+}
+
+.github>a>svg:hover{
+    fill: #7DBBE6;
+}

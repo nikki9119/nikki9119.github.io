@@ -85,7 +85,7 @@ const fadeInPicture = () => {
         opacity: ['0','1'],
         translateY:['100px','0px'],
         easing: 'easeOutExpo',
-        duration: 1500,
+        duration: 2000,
         delay: 1000
     })
 };
