@@ -17,3 +17,8 @@
 .github>a>svg:hover{
     fill: #7DBBE6;
 }
+
+.institution_logo{
+    width: 60px;
+    height: 60px;
+}

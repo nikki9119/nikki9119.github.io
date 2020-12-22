@@ -6,13 +6,14 @@ var sun = document.getElementById("sun");
 var moon = document.getElementById("moon")
 var theme = localStorage.getItem("theme");
 
-var sheet = document.styleSheets[0];
+var sheet = document.styleSheets[3];
 var rules = sheet.cssRules || sheet.rules;
 
-var textColor = rules[2];
-var bgColor = rules[3];
-var bannerBg = rules[7];
-var iconColor = rules[8];
+var textColor = rules[0];
+var bgColor = rules[1];
+var bannerBg = rules[2];
+var iconColor = rules[3];
+var cardBg = rules[4];
 
 window.onload = function() {
     if(theme === "light"){
@@ -52,6 +53,7 @@ function changeThemeToDark(){
     textColor.style.color = "#ffffff"; //#f2a365
     bgColor.style.background = "#222831";
     bannerBg.style.background = "#222831";
+    cardBg.style.background = "#696969";
     iconColor.style.fill = "#ffffff";
     sun.style.display = "inline-block";
     moon.style.display = "none";
@@ -62,8 +64,9 @@ function changeThemeToLight(){
     theme = "light"
     localStorage.setItem("theme",theme);
     textColor.style.color = "#222831";
-    bgColor.style.background = "#ffffff";
-    bannerBg.style.background = "#ffffff";
+    bgColor.style.background = "#f3f2ef";
+    bannerBg.style.background = "#f3f2ef";
+    cardBg.style.background = "#ffffff";
     iconColor.style.fill = "#222831";
     moon.style.display = "inline-block";
     sun.style.display = "none";
