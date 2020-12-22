@@ -1,0 +1,19 @@
+.textcolor{
+    color : #ffffff;
+}
+
+.bgcolor{
+    background: #ffffff;
+}
+
+div.banner:before{
+    background: #ffffff;
+}
+
+.iconcolor>a{
+    fill: #00C6FF !important;
+}
+
+.card{
+    background: #ffffff;
+}
