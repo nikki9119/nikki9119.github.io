@@ -14,6 +14,27 @@ var bgColor = rules[1];
 var bannerBg = rules[2];
 var iconColor = rules[3];
 var cardBg = rules[4];
+var timelineBg = rules[5];
+var timelineEventBg = rules[6];
+
+fetch("https://quotes.rest/qod",{
+    method: "GET"
+})
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
+      response.json().then(function(data) {
+        console.log(data);
+      });
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
 
 window.onload = function() {
     if(theme === "light"){
@@ -55,6 +76,9 @@ function changeThemeToDark(){
     bannerBg.style.background = "#222831";
     cardBg.style.background = "#696969";
     iconColor.style.fill = "#ffffff";
+    timelineBg.style["border-left"] = "3px solid #ffffff";
+    timelineEventBg.style["background"] = "#ffffff";
+    timelineEventBg.style["border"] = "2px solid #222831";
     sun.style.display = "inline-block";
     moon.style.display = "none";
     document.getElementById("themetooltip").innerHTML = "Light Theme";
@@ -68,6 +92,9 @@ function changeThemeToLight(){
     bannerBg.style.background = "#f3f2ef";
     cardBg.style.background = "#ffffff";
     iconColor.style.fill = "#222831";
+    timelineBg.style["border-left"] = "3px solid #222831";
+    timelineEventBg.style["background"] = "#222831";
+    timelineEventBg.style["border"] = "2px solid #f3f2ef";
     moon.style.display = "inline-block";
     sun.style.display = "none";
     document.getElementById("themetooltip").innerHTML = "Dark Theme";

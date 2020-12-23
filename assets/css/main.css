@@ -45,8 +45,8 @@ div.banner:before{
     clip-path: polygon(100% 0,0 100%,100% 100%);
 }
 
-section{
-    height: 100vh;
+#landingpage{
+    height: 100%;
 }
 
 .git-logo{
@@ -214,19 +214,29 @@ div.profile_intro{
 .timeline{
     display: grid;
     gap: 30px 0;
+    margin: 0 2em;
 }
 
 .card{
-    margin: auto;
-    width: 70vw;
     border-radius: 10px;
     padding: 0.5em;
-    /* background: #ffffff; */
 }
 
 .institution{
     display: flex;
     flex-direction: column;
+    margin: 0 2em;
+    width: 70vw;
+}
+
+.timeline_event::before{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 1.5em;
 }
 
 .institution_name{
@@ -287,5 +297,16 @@ div.profile_intro{
     }
     .profiletray{
         gap: 0 50px;
+    }
+    .timeline{
+        margin: 0 5em;
+    }
+    .institution{
+        margin: 0 3em;
+    }
+    .timeline_event::before{
+        width: 20px;
+        height: 20px;
+        left: 4.35em;
     }
 }
