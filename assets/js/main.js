@@ -73,7 +73,7 @@ function changeThemeToDark(){
     localStorage.setItem("theme",theme);
     textColor.style.color = "#ffffff"; //#f2a365
     bgColor.style.background = "#222831";
-    bannerBg.style.background = "#222831";
+    bannerBg.style.background = "#222831"; //#0d1117
     cardBg.style.background = "#696969";
     iconColor.style.fill = "#ffffff";
     timelineBg.style["border-left"] = "3px solid #ffffff";

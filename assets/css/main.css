@@ -214,11 +214,11 @@ div.profile_intro{
 .timeline{
     display: grid;
     gap: 30px 0;
-    margin: 0 2em;
+    margin: 1em 1em;
 }
 
 .card{
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 0.5em;
 }
 
@@ -244,6 +244,12 @@ div.profile_intro{
     flex-direction: row;
     align-items: center;
     padding: 0.5em;
+}
+
+.name_location{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
 }
 
 .institution_info{
@@ -299,7 +305,7 @@ div.profile_intro{
         gap: 0 50px;
     }
     .timeline{
-        margin: 0 5em;
+        margin: 1em 3em;
     }
     .institution{
         margin: 0 3em;
@@ -307,6 +313,6 @@ div.profile_intro{
     .timeline_event::before{
         width: 20px;
         height: 20px;
-        left: 4.35em;
+        left: 3.35em;
     }
 }
