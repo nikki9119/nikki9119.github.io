@@ -217,22 +217,20 @@ div.profile_intro{
     margin: 1em 1em;
 }
 
-.card{
-    /* border-radius: 10px; */
-    /* padding: 0.5em; */
-}
+/* .card{
+    border-radius: 10px;
+    padding: 0.5em;
+} */
 
 .institution{
     display: flex;
     flex-direction: row;
-    margin: 0 2em;
+    margin: 0.5em 0em 0em 2em;
     width: 75vw;
 }
 
 .arrowbar{
-    width:0.3em;
-    height: 100%;
-    background: #00C6FF;
+    display: hidden;
 }
 
 .institution_container{
@@ -320,7 +318,7 @@ div.profile_intro{
         margin: 1em 3em;
     }
     .institution{
-        margin: 0 3em;
+        margin: 0.5em 0em 0em 3em;
     }
     .timeline_event::before{
         width: 20px;
@@ -328,6 +326,22 @@ div.profile_intro{
         left: 3.35em;
     }
     .arrowbar{
-        width: 0.5em;
+        width:0.7em;
+        height: 100%;
+        background: #00C6FF;
+        /* border-radius: 10px 0 0 10px; */
+    }
+    .arrowbar::before{
+        display: block;
+        content: '';
+        height: 0;
+        position: relative;
+        width: 0;
+        z-index: 1;
+        left: -1.9em;
+        top: 0.2em;
+        border: medium solid #ff8c00;
+        border-width: 10px 20px 10px 0;
+        border-color: transparent #ff8c00 transparent transparent;
     }
 }
