@@ -273,17 +273,23 @@ div.profile_intro{
     flex-direction: column;
 }
 
-/* .skill_container{
-    display: flex;
-    flex-direction: row;
+.skill_container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-flow: row dense;
+    gap: 2em;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1em;
 }
 
 .skill{
     align-items: center;
     text-align: center;
-    width: 30vw;
+    width: 10em;
     padding: 0.5em;
-} */
+}
 
 @media(min-width: 760px){
     header{
@@ -364,5 +370,36 @@ div.profile_intro{
         border: medium solid #ff8c00;
         border-width: 10px 20px 10px 0;
         border-color: transparent #ff8c00 transparent transparent;
+    }
+    .skill_container{
+        grid-template-columns: auto auto auto;
+        gap: 2em;
+    }
+    .skill{
+        width: 12em;
+        padding: 0.7em;
+    }
+}
+
+@media(min-width:1024px){
+    .skill_container{
+        grid-template-columns: auto auto auto auto;
+        gap: 3em;
+    }
+    .skill{
+        width: 12em;
+    }
+    .institution{
+        width: 80vw;
+    }
+}
+
+@media(min-width:1200px){
+    .skill{
+        width: 15em;
+        padding: 1em;
+    }
+    .institution{
+        width: 85vw;
     }
 }
