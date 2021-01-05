@@ -14,3 +14,43 @@ body::-webkit-scrollbar{
 .header_logo{
     -webkit-tap-highlight-color: transparent;
 }
+
+.angular{
+    width: 80%;
+}
+
+.python{
+    width: 80%;
+}
+
+.cpp{
+    width: 65%;
+}
+
+.sql{
+    width: 75%;
+}
+
+.js{
+    width: 70%;
+}
+
+.html{
+    width: 70%;
+}
+
+.css{
+    width: 65%;
+}
+
+.ts{
+    width: 80%;
+}
+
+.php{
+    width: 40%;
+}
+
+.ds{
+    width: 75%;
+}

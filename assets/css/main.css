@@ -296,10 +296,38 @@ div.profile_intro{
     padding: 0.5em;
 }
 
-.scorebar{
+.score_container{
+    display: flex;
+    width: 90%;
+    margin: 0em 0.5em 1em 0.5em;
+    background: gray;
+    border-radius: 5px;
+}
+
+.skillbar{
     background: #ff8c00;
-    width: 100%;
     height: 0.5em;
+    border-radius: 5px 0 0 5px;
+    transition: 0.5s;
+    text-align: right;
+}
+
+.skill:hover .skillbar{
+    height: 1em;
+}
+
+.skillscore{
+    display: flex;
+    float: right;
+    color: black;
+    margin-right: 5px;
+    font-size: 10px;
+    visibility: hidden;
+}
+
+.skill:hover .skillscore{
+    visibility: visible;
+    transition-delay: 0.5s;
 }
 
 @media(min-width: 760px){
@@ -397,6 +425,15 @@ div.profile_intro{
         height: 0.5em;
         background: linear-gradient(to right,#0072FF,#00c6FF);
         border-radius: 10px 10px 0 0;
+    }
+    .skillbar{
+        height: 0.7em;
+    }
+    .skill:hover .skillbar{
+        height: 1.5em;
+    }
+    .skillscore{
+        font-size: 15px;
     }
 }
 
