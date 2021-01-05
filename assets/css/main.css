@@ -285,10 +285,21 @@ div.profile_intro{
 }
 
 .skill{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
     width: 10em;
+}
+.skill_info{
     padding: 0.5em;
+}
+
+.scorebar{
+    background: #ff8c00;
+    width: 100%;
+    height: 0.5em;
 }
 
 @media(min-width: 760px){
@@ -377,29 +388,39 @@ div.profile_intro{
     }
     .skill{
         width: 12em;
+    }
+    .skill_info{
         padding: 0.7em;
+    }
+    .topbar{
+        width: 100%;
+        height: 0.5em;
+        background: linear-gradient(to right,#0072FF,#00c6FF);
+        border-radius: 10px 10px 0 0;
     }
 }
 
 @media(min-width:1024px){
+    .institution{
+        width: 80vw;
+    }
     .skill_container{
         grid-template-columns: auto auto auto auto;
         gap: 3em;
     }
     .skill{
-        width: 12em;
-    }
-    .institution{
-        width: 80vw;
+        width: 13em;
     }
 }
 
 @media(min-width:1200px){
-    .skill{
-        width: 15em;
-        padding: 1em;
-    }
     .institution{
         width: 85vw;
+    }
+    .skill{
+        width: 17em;
+    }
+    .skill_info{
+        padding: 1em;
     }
 }
