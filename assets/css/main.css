@@ -448,10 +448,10 @@ div.profile_intro{
     }
     .skill_container{
         grid-template-columns: auto auto auto auto;
-        gap: 3em;
+        gap: 2em;
     }
     .skill{
-        width: 13em;
+        width: 14em;
     }
 }
 
@@ -460,9 +460,12 @@ div.profile_intro{
         width: 85vw;
     }
     .skill{
-        width: 17em;
+        width: 15em;
     }
     .skill_info{
         padding: 1em;
+    }
+    .skill_container{
+        grid-template-columns: auto auto auto auto auto;
     }
 }
