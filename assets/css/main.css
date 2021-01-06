@@ -112,8 +112,12 @@ div.image_canvas{
     z-index: 1;
 }
 
-.elevated{
+.elevated1{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.elevated2{
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16);
 }
 
 img.profile_image{
@@ -308,7 +312,7 @@ div.profile_intro{
     background: #ff8c00;
     height: 0.5em;
     border-radius: 5px 0 0 5px;
-    transition: 0.5s;
+    transition: 0.3s;
     text-align: right;
 }
 
@@ -322,12 +326,13 @@ div.profile_intro{
     color: black;
     margin-right: 5px;
     font-size: 10px;
+    font-weight: bold;
     visibility: hidden;
 }
 
 .skill:hover .skillscore{
     visibility: visible;
-    transition-delay: 0.5s;
+    transition-delay: 0.3s;
 }
 
 @media(min-width: 760px){
@@ -430,7 +435,7 @@ div.profile_intro{
         height: 0.7em;
     }
     .skill:hover .skillbar{
-        height: 1.5em;
+        height: 1.3em;
     }
     .skillscore{
         font-size: 15px;
