@@ -3,7 +3,8 @@ if(!localStorage.getItem("theme")){
 }
 
 var sun = document.getElementById("sun");
-var moon = document.getElementById("moon")
+var moon = document.getElementById("moon");
+var suncloud = document.getElementById("suncloud");
 var theme = localStorage.getItem("theme");
 
 var sheet = document.styleSheets[3];
@@ -51,9 +52,6 @@ window.onload = function() {
     fadeInIntro();
     fadeInKnowMore();
     fadeInProfileTray();
-    // new fullpage('#fullpage',{
-    //     autoScrolling: true,
-    // });
 };
 
 function fadeInPage(){
@@ -81,6 +79,7 @@ function changeThemeToDark(){
     timelineEventBg.style["border"] = "2px solid #222831";
     sun.style.display = "inline-block";
     moon.style.display = "none";
+    suncloud.style.visibility = "hidden";
     document.getElementById("themetooltip").innerHTML = "Light Theme";
 }
 
@@ -97,6 +96,7 @@ function changeThemeToLight(){
     timelineEventBg.style["border"] = "2px solid #f3f2ef";
     moon.style.display = "inline-block";
     sun.style.display = "none";
+    suncloud.style.visibility = "visible";
     document.getElementById("themetooltip").innerHTML = "Dark Theme";
 }
 

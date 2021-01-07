@@ -28,9 +28,44 @@
     height: 70px;
 }
 
+.suncloud{
+    display: none;
+}
+
 @media(min-width: 760px){
     .skill_logo{
         width: 130px;
         height: 130px;
+    }
+}
+
+@media(min-width: 1024px){
+    .suncloud{
+        display: block;
+    }
+    #lightsun{
+        position: absolute;
+        top: 9vh;
+        left: 9vw;
+        width: 10em;
+        height: 10em;
+    }
+    
+    .cloud{
+        width: 14em;
+        height: 14em;
+    }
+    
+    #cloud2{
+        position: absolute;
+        top: 10vh;
+        left: 4vw;
+        /* transform: rotate(11deg); */
+    }
+    
+    #cloud1{
+        position: absolute;
+        top: 7vh;
+        left: 10vw;
     }
 }
