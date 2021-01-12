@@ -97,6 +97,7 @@ function changeThemeToLight(){
     moon.style.display = "inline-block";
     sun.style.display = "none";
     suncloud.style.visibility = "visible";
+    fadeInSunCloud();
     document.getElementById("themetooltip").innerHTML = "Dark Theme";
 }
 
@@ -167,5 +168,13 @@ const fadeInProfileTray = () => {
         duration: 1500,
         easing: 'easeInOutQuad',
         delay: 2000
+    })
+}
+
+const fadeInSunCloud = () => {
+    anime({
+        targets: '.suncloud',
+        opacity: ['0','1'],
+        easing: 'easeInOutQuad'
     })
 }

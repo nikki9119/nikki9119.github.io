@@ -55,7 +55,13 @@
         width: 14em;
         height: 14em;
     }
-    
+
+    #cloud1{
+        position: absolute;
+        top: 7vh;
+        left: 10vw;
+    }
+
     #cloud2{
         position: absolute;
         top: 10vh;
@@ -63,9 +69,4 @@
         /* transform: rotate(11deg); */
     }
     
-    #cloud1{
-        position: absolute;
-        top: 7vh;
-        left: 10vw;
-    }
 }
