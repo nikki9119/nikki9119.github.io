@@ -79,7 +79,7 @@ function changeThemeToDark(){
     timelineEventBg.style["border"] = "2px solid #222831";
     sun.style.display = "inline-block";
     moon.style.display = "none";
-    suncloud.style.visibility = "hidden";
+    // suncloud.style.visibility = "hidden";
     document.getElementById("themetooltip").innerHTML = "Light Theme";
 }
 
@@ -96,7 +96,7 @@ function changeThemeToLight(){
     timelineEventBg.style["border"] = "2px solid #f3f2ef";
     moon.style.display = "inline-block";
     sun.style.display = "none";
-    suncloud.style.visibility = "visible";
-    fadeInSunCloud();
+    // suncloud.style.visibility = "visible";
+    // fadeInSunCloud();
     document.getElementById("themetooltip").innerHTML = "Dark Theme";
 }
