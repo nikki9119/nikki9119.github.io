@@ -1,0 +1,28 @@
+<mat-card class="mat-elevation-z3 card">
+    <div fxLayout="row" fxLayoutAlign="space-around stretch">
+        <div fxLayout="column" fxLayoutAlign="space-evenly stretch" fxFlex fxLayoutGap="0.2em"> 
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+                <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1em">
+                    <img [src]="institution.logo" [alt]="institution.alt" class="institution-logo">
+                    <div fxLayout="column" fxLayoutAlign="center start">
+                        <span class="text-medium">{{ institution.name }}</span>
+                        <span class="text-small fw-300">{{ institution.location }}</span>                
+                    </div>
+                </div>
+                <app-status [status]="institution.status"></app-status>
+            </div>
+            <span class="text-small fw-400" fxFlexOffset="0.5em">{{ institution.education }}</span>
+            <span class="text-small fw-300">{{ institution.time }}</span>
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+                <span class="text-small fw-300">{{ institution.marks }}</span>
+                <a mat-button class="marksheet-btn fw-400 btn-flat-accent" fxLayout="row" fxLayoutAlign="center center">Marksheet</a>
+            </div>
+        </div>
+        <!-- <mat-divider [vertical]="true"></mat-divider>
+        <div class="secondary-info" fxLayout="column" fxLayoutAlign="space-evenly center">
+            <button mat-icon-button class="btn-flat-primary" matTooltip="Location" matTooltipPosition="right"><mat-icon>location_pin</mat-icon></button>
+            <button mat-icon-button class="btn-flat-primary" matTooltip="Info" matTooltipPosition="right"><mat-icon>info_outline</mat-icon></button>
+            <button mat-icon-button class="btn-flat-primary" matTooltip="Website" matTooltipPosition="right"><mat-icon>link</mat-icon></button>
+        </div> -->
+    </div>
+</mat-card>

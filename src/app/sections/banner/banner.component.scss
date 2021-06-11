@@ -1,0 +1,76 @@
+.banner{
+    background: linear-gradient(#0072ff,#00c6ff);
+    background: linear-gradient(to right,#009fff,#ec2f4b);
+    height: 50vh;
+    position: absolute;
+    width: 100%;
+    clip-path: polygon(160% 0%, 0% 100%, 0% 100%, 0% 0%);
+}
+
+.name_card{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 14vh;
+}
+
+.image-card{
+    width: 18em;
+    height: 18em;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.profile_image{
+    display: block;
+    border-radius: 50%;
+    height: 100%; width: 100%; object-fit: contain;
+}
+
+span.name{
+    position: relative;
+    top: 0.5em;
+}
+
+div.profile_intro{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 10vh;
+    padding: 1em;
+}
+
+.scroll_banner{
+    position: relative;
+    top: 10vh;
+    display: flex;
+    width: 9em;
+    height: 2em;
+    margin: 0 0.5em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 7px;
+    text-decoration: none;
+    // background: linear-gradient(145deg,#1976d2,#42a5f5);
+}
+
+.profiletray{
+    position: relative;
+    top: 19vh;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

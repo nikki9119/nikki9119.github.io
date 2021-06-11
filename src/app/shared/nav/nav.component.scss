@@ -1,0 +1,63 @@
+.sidenav{
+    width: 280px;
+    top: 3.5em !important;
+}
+
+.toolbar{
+    position: fixed;
+    z-index: 3;
+    height: 2.5em;
+    transition: 0.5s;
+    padding: 0 1em 0 0;
+    // opacity: 0.9;
+    background: linear-gradient(to right,#009fff,#ec2f4b);
+}
+
+.mat-drawer-container{
+    height: 100%;
+}
+
+.is-transparent{
+    background: transparent;
+    transition-delay: 0.2s;
+    transition: 0.5s;
+}
+
+a{
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.menu_icon{
+    height: 100%;
+}
+
+.gitlogo{
+    fill: #ffffff; 
+    position: relative;
+    bottom: -6px;
+}
+
+.header-container{
+    height: 100% !important;
+}
+
+.link-active{
+    color: #009fff !important;
+    // border-radius: 0 50px 50px 0;
+    .rectangle{
+        width: 2%;
+        height: 100%;
+        background: #009fff !important;
+        margin-right: -16px;
+    }
+}
+
+// .mat-list-item:hover, .mat-ripple{
+//     border-radius: 0 50px 50px 0 !important;
+// }
+
+.link-icon{
+    padding: 0 1em 0 0;
+}

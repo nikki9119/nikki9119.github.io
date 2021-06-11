@@ -1,0 +1,33 @@
+<mat-card class="mat-elevation-z3 card">
+    <div fxLayout="row" fxLayoutAlign="space-around stretch">
+        <div fxLayout="column" fxLayoutAlign="space-evenly stretch" fxFlex fxLayoutGap="0.2em"> 
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+                <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1em">
+                    <img [src]="company.logo" [alt]="company.alt" class="company-logo">
+                    <div fxLayout="column" fxLayoutAlign="center start">
+                        <span class="text-medium">{{ company.name }}</span>
+                        <span class="text-small fw-300">{{ company.location }}</span>                
+                    </div>
+                </div>
+                <app-status [status]="company.status"></app-status>
+            </div>
+            <span class="text-small fw-400" fxFlexOffset="0.5em">{{ company.designation }}</span>
+            <span class="text-small fw-300">{{ company.time }}</span>
+            <!-- <div fxLayout="row" fxLayoutAlign="space-between center">
+                <span class="text-small fw-300">{{ institution.marks }}</span>
+                <button mat-button color="primary" class="marksheet-btn fw-400" fxLayout="row" fxLayoutAlign="center center">Marksheet</button>
+            </div> -->
+            <!-- <mat-expansion-panel class="mat-elevation-z0">
+                <mat-expansion-panel-header class="exp-header">
+                    <mat-panel-title class="text-small fw-300">Description</mat-panel-title>
+                </mat-expansion-panel-header>
+            </mat-expansion-panel> -->
+            <div class="text-small fw-400">Job Description :</div>
+            <ul>
+                <li *ngFor="let desc of company.description" class="text-small fw-300">
+                    {{ desc }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</mat-card>
