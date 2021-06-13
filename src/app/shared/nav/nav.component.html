@@ -17,19 +17,19 @@
     <mat-sidenav-container class="mat-app-background" [ngClass]="{'light-theme':isLightTheme}">
         <mat-sidenav
             #drawer
-            fixedInViewport
+            [fixedInViewport] = "isHandset$ | async"
             [mode] = "(isHandset$ | async)?'over':'side'"
             [opened] = "isNotHome && !(isHandset$ | async)"
             class = "sidenav"
         >
         <mat-nav-list fxLayout="column" fxLayoutAlign="space-evenly">
-            <a routerLink="home" routerLinkActive="link-active" mat-list-item>
+            <a routerLink="home" routerLinkActive="link-active" mat-list-item (click)="(isHandset$)? drawer.toggle(): ''">
                 <mat-icon class="link-icon">home</mat-icon>
                 <div class="fw-400 text-small">Home</div>
                 <div style="flex: 1 1 auto;"></div>
                 <div class="rectangle"></div>
             </a>
-            <a routerLink="about" routerLinkActive="link-active" mat-list-item>
+            <a routerLink="about" routerLinkActive="link-active" mat-list-item (click)="(isHandset$)? drawer.toggle(): ''">
                 <mat-icon class="link-icon">info</mat-icon>
                 <div class="fw-400 text-small">About</div>
                 <div style="flex: 1 1 auto;"></div>
@@ -41,7 +41,7 @@
                 <div style="flex: 1 1 auto;"></div>
                 <div class="rectangle"></div>
             </a> -->
-            <a routerLink="certificates" routerLinkActive="link-active" mat-list-item>
+            <a routerLink="certificates" routerLinkActive="link-active" mat-list-item (click)="(isHandset$)? drawer.toggle(): ''">
                 <mat-icon class="link-icon">stars</mat-icon>
                 <div class="fw-400 text-small">Certifications</div>
                 <div style="flex: 1 1 auto;"></div>
