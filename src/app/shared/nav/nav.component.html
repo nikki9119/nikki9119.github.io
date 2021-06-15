@@ -3,7 +3,7 @@
         <button mat-button class="menu_icon" *ngIf="isNotHome" (click)="drawer.toggle()">
             <mat-icon>menu</mat-icon>
         </button>
-        <a *ngIf="isNotHome && !(isHandset$ | async)" [routerLink]="['/home']" style="padding: 0.5em;" class="fw-300">Nikhil Kumar's Portfolio</a>
+        <a *ngIf="isNotHome && !(isHandset$ | async)" [routerLink]="['/']" style="padding: 0.5em;" class="fw-300">Nikhil Kumar's Portfolio</a>
         <div style="flex: auto;"></div>
         <button mat-icon-button (click)="changeTheme()" matTooltip="Change to {{isLightTheme?'dark':'light'}} theme">
             <mat-icon *ngIf="!isLightTheme">light_mode</mat-icon>
@@ -23,13 +23,13 @@
             class = "sidenav"
         >
         <mat-nav-list fxLayout="column" fxLayoutAlign="space-evenly">
-            <a routerLink="home" routerLinkActive="link-active" mat-list-item (click)="(isHandset$)? drawer.toggle(): ''">
+            <a routerLink="/" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact: true}" mat-list-item (click)="(isHandset$)? drawer.toggle(): ''">
                 <mat-icon class="link-icon">home</mat-icon>
                 <div class="fw-400 text-small">Home</div>
                 <div style="flex: 1 1 auto;"></div>
                 <div class="rectangle"></div>
             </a>
-            <a routerLink="about" routerLinkActive="link-active" mat-list-item>
+            <a routerLink="about" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact: true}" mat-list-item>
                 <mat-icon class="link-icon">info</mat-icon>
                 <div class="fw-400 text-small">About</div>
                 <div style="flex: 1 1 auto;"></div>
@@ -41,7 +41,7 @@
                 <div style="flex: 1 1 auto;"></div>
                 <div class="rectangle"></div>
             </a> -->
-            <a routerLink="certificates" routerLinkActive="link-active" mat-list-item>
+            <a routerLink="certificates" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact: true}" mat-list-item>
                 <mat-icon class="link-icon">stars</mat-icon>
                 <div class="fw-400 text-small">Certifications</div>
                 <div style="flex: 1 1 auto;"></div>
