@@ -22,7 +22,10 @@
     </div>
     <mat-divider class="divider"></mat-divider>
     <div id="skills" fxLayout="column" fxLayoutAlign="space-evenly" fxLayoutGap="0.3em" fxFill>
-        <div class="text-large fw-300">Technical Skills</div>
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="0.2em">
+            <div class="text-large fw-300">Technical Skills</div>
+            <!-- <a mat-icon-button href="/about#skills"><mat-icon>link</mat-icon></a> -->
+        </div>
         <div fxLayout="row wrap" fxLayoutGap="1em grid">
             <app-skill-card *ngFor="let sk of skills" [skill]="sk" fxFlex></app-skill-card>
         </div>
