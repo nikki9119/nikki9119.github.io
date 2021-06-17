@@ -19,9 +19,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build
-        run: npm run build:ci
+        run: npm run build:git
       - name: Test
-        run: npm run test:ci
+        run: npm run test:git
       - name: Archive build
         if: success()
         uses: actions/upload-artifact@v1
@@ -49,4 +49,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: deploy_dist/angular-demo
+          FOLDER: deploy_dist/portfolio
