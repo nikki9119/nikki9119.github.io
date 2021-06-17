@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:git": "ng build --prod --sourceMap=false --base-href nikki9119.github.io",
+    "test:git": "ng test --watch=false --code-coverage --source-map true"
   },
   "private": true,
   "dependencies": {
